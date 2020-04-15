@@ -26,13 +26,13 @@ fit_time = fit_time_data[153:678]
 fig=plt.figure()
 ax=fig.add_subplot(1,1,1)
 #make an xy scatter plot
-plt.scatter(time_data,temp_data,color='red', label='Recorded Data')
-#add the linear regression
-plt.plot(fit_time, my_func(fit_time, 8.11, -0.14), color = 'black', label = 'Linear Regression') 
+plt.scatter(time_data,temp_data,color='red', label='data')
+#add the exp curve w/ guess for consts a and b:
+plt.plot(fit_time, my_func(fit_time, 8.11, -0.14), color = 'black') 
+plt.plot(fit_time_data, my_func(fit_time_data, 9.43, -0.31), color = 'purple')
 #label the axes etc
 ax.set_xlabel('Time(hr)')
 ax.set_ylabel('Voltage(V)')
 ax.set_title('9V Battery Voltage Continuous discharge')
-plt.legend(loc = 'upper right')
 plt.savefig('ex1test.png', dpi = 350)
     
