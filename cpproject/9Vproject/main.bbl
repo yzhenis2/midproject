@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{batterydatasheet}
+Energizer.
+\newblock {Energizer EN22 Data Sheet}.
+
+\bibitem{adcdatasheet}
+Texas Instrument.
+\newblock {ADC0831 Chip Data Sheet}.
+
+\bibitem{current}
+JeGX.
+\newblock {Meet the Raspberry Pi GPIO Connector}, Mar 2015.
+
+\bibitem{meyer}
+Curtis~A Meyer.
+\newblock {\em Basic Electronics: An Introduction to Electronics for Science
+  Students}.
+\newblock Curtis A. Meyer, 2015.
+
+\bibitem{schmidt2018batteries}
+Klaus Schmidt-Rohr.
+\newblock How batteries store and release energy: Explaining basic
+  electrochemistry.
+\newblock {\em Journal of Chemical Education}, 95(10):1801--1810, 2018.
+
+\bibitem{project}
+Yelaman Zhenis.
+\newblock Project link.
+
+\end{thebibliography}

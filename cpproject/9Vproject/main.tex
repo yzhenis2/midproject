@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+
+\oddsidemargin = 13pt
+\title{\vspace{-3em}Data Analysis and Visualisation Project}
+\author{Yelaman Zhenis }
+\date{March 2020}
+
+\begin{document}
+
+\maketitle
+\input{abstract}
+\input{intro}
+\input{analysis}
+\input{conclusion}
+\newpage
+\section{Appendix}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{pinout.png}
+\caption{Raspberry Pi Pinout}
+\label{fig:pinout}
+\end{figure}\newpage
+\bibliographystyle{plain}
+\bibliography{reference}
+\end{document}
