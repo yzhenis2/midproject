@@ -7,11 +7,20 @@ This is Data Analysis and Visualization project for Computational Physics course
 #Instal
 
 There are several modules used for this project (w/ command lines for installation):
-time  --  Python's standart library
+
+time  	    --  Python's standart library
 
 matplotlib  --  pip install matplotlib
 
-numpy  --  pip install numpy
+numpy  	    --  pip install numpy
 
-RPi.gpio -- sudo apt-get update
-	    sudo apt-get install rpi.gpio
+RPi.gpio    -- sudo apt-get update
+	       sudo apt-get install rpi.gpio
+
+#Content
+
+Everything is in cpproject directory. This folder contains two directories:
+
+9Vproject -- Contains LaTex report and related files
+
+exam 	  -- Contains scripts, raw data, and plot.
