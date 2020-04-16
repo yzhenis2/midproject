@@ -1,7 +1,6 @@
 #Exam 1
 #using the ADC0831 to measure Voltage of the 9V Battery
 #Yelaman Zhenis
-#2/17/19
 
 import RPi.GPIO as GPIO
 import time
@@ -26,22 +25,16 @@ def readADC():
     d=''
     #set the cs pin low(starts conversation)
     GPIO.output(CS, False)
-    #one clock pulse
-    #set the CLK pin low
+    #setting one clock pulse
     GPIO.output(CLK, False)
-    #set the CLK pin high
     GPIO.output(CLK, True)
-    #set the CLK pin low
     GPIO.output(CLK, False)
     #end clock pulse
     #now to read the data synced to more clock pulses
     for n in range(0,8):#read in 8 bits, 0-7
         #one clock pulse
-        #set the CLK pin low
         GPIO.output(CLK, False)
-        #set the CLK pin high
         GPIO.output(CLK, True)
-        #set the CLK pin low
         GPIO.output(CLK, False)
         #end clock pulse
         #list to the DO pin for a bit
@@ -102,7 +95,7 @@ try:
         my_volts = calc_volts(voltage_data[n])
         #write the data as comma delimited
         file.write(str(time_data[n]) + ',' + str(my_volts) + '\n')
-    #always close the file you are using!
+    #close the file
     file.close()
 except KeyboardInterrupt:
     #here you any code or commands to run before the programexits when you press CTRL+C
